@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Business Object Gmail" data-provider-thread-count="3" parallel="classes" >
+    <listeners>
+        <listener class-name="com.epam.lab.TestNGListener"/>
+    </listeners>
+    <test name="Passed: deleteInboxMessage">
+        <classes>
+            <class name="com.epam.lab.DeleteInboxMessageTest"/>
+        </classes>
+    </test>
+    <test name="Failed: checkInboxTitleTest">
+        <classes>
+            <class name="com.epam.lab.CheckInboxTitleTest"/>
+        </classes>
+    </test>
+</suite>
